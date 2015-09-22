@@ -38,7 +38,7 @@ describe "Performance Monitor" do
 
     expect(elapsed_time).to be_within(0.1).of(1)
   end
-
+#=begin
   it "takes exactly 1 second to run a block that sleeps for 1 second (with stubs)" do
     fake_time = @eleven_am
     allow(Time).to receive(:now) { fake_time }
@@ -49,7 +49,7 @@ describe "Performance Monitor" do
 
     expect(elapsed_time).to eq(60)
   end
-
+#=end
   it "runs a block N times" do
     n = 0
 
